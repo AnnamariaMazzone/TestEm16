@@ -1,0 +1,4 @@
+/Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeFiles/TestEm16.dir
+/Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeFiles/install.dir
+/Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeFiles/ALL_BUILD.dir
+/Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeFiles/ZERO_CHECK.dir

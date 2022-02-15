@@ -1,0 +1,23 @@
+#
+# Macro file for "TestEm16.cc"
+# (can be run in batch, without graphic)
+#
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/target/setMat PS25_S75
+/testem/target/setSize 1.8 mm
+#
+/run/initialize
+
+/gun/particle gamma
+/gun/energy 40 keV
+#
+# set up histos.  A reasonable choice for the upper limits is about 5*Ecr and 10*MeanFreePath
+/analysis/setFileName PS25_S75_1pt8mm
+/analysis/h1/set 1 100 0   40 keV	#Edep Energy
+/analysis/h1/set 2 100 0   40 keV	#Flow Energy
+#
+#
+/run/beamOn 1000000

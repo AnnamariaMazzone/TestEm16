@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2983A7BA3EFA47C18A7D6DAD /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 52CC1FEFA0BE4B13935A8F50 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4DAAF0D6D5A24695A400F84E /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		9976F17068B64B4296667ECD /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 768505722C8A43A79C49149B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6FB13AEB19BCC3163389C81B /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				FC68709AA3D84DE7899095EE /* PBXTargetDependency */,
+				96F4D205C49B4AE48A5A6CC7 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		A07C1A96F46F450DB1909CFA /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4FA231863D1549EC8C745E02 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				2E43868890A2808DC9B74C01 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		022C046F42464756958A2348 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/TrackingAction.cc */ = {isa = PBXBuildFile; fileRef = 590B73399F9340ECAC56D27D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/TrackingAction.cc */; };
+		02DD3B1ED6CB4F369941A121 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/EventAction.hh */ = {isa = PBXBuildFile; fileRef = F539963BFE0A4BD69F73859D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/EventAction.hh */; };
+		07D6067EA7BD4954ACD0DA67 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMax.cc */ = {isa = PBXBuildFile; fileRef = E4E39088E79E44EF959CEC84 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMax.cc */; };
+		0D0538AEA6EC40B68021CDDD /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsList.hh */ = {isa = PBXBuildFile; fileRef = 6BEE31BF6E0942099E658252 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsList.hh */; };
+		0E989152872E433C854C9A09 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorMessenger.hh */ = {isa = PBXBuildFile; fileRef = 1F44A2467723425894D94262 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorMessenger.hh */; };
+		222CC31BB43141A9B550C415 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/Run.cc */ = {isa = PBXBuildFile; fileRef = 3984A5526E1E464594EE925C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/Run.cc */; };
+		25C1159D442B4943B488AC5B /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/HistoManager.hh */ = {isa = PBXBuildFile; fileRef = 5450F8593CD647EE9BECD152 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/HistoManager.hh */; };
+		2756F21B57CC47B199156C40 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMaxMessenger.hh */ = {isa = PBXBuildFile; fileRef = BA3041C18C0D46BEB860ABD3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMaxMessenger.hh */; };
+		2B75269E183B4E838C472D78 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMax.hh */ = {isa = PBXBuildFile; fileRef = 3F63B99E4CF647349D92B7E1 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMax.hh */; };
+		4FC35C23E88B41DD803C885C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsList.cc */ = {isa = PBXBuildFile; fileRef = 074C036022A54AAAA3A6CDD4 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsList.cc */; };
+		5CC2ADA45A29482A861E99B3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PrimaryGeneratorAction.cc */ = {isa = PBXBuildFile; fileRef = 6101CADD0BAE4AA8B583FAF8 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PrimaryGeneratorAction.cc */; };
+		5F7BA75E514F4D1C863D3CF0 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/RunAction.cc */ = {isa = PBXBuildFile; fileRef = 1BABC9345A20404F92746100 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/RunAction.cc */; };
+		721AECC15C1F4E439DDB5AA1 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/HistoManager.cc */ = {isa = PBXBuildFile; fileRef = 05376672A9E1419EBD941CF2 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/HistoManager.cc */; };
+		75164A8ED122473299D3E621 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/SteppingAction.cc */ = {isa = PBXBuildFile; fileRef = 0FAF9BF1D17848DEABA8FD2C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/SteppingAction.cc */; };
+		79C0CC1F9EFF439FA2B5A2D3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsListMessenger.hh */ = {isa = PBXBuildFile; fileRef = 6345F2822DEE4ECD89C8592C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsListMessenger.hh */; };
+		8BBADBE3A6D74217A1EE4CF2 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/EventAction.cc */ = {isa = PBXBuildFile; fileRef = EB6B510DCAD74D6D9EECA97E /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/EventAction.cc */; };
+		8BE37EB7E37B4DC7B7A73153 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorConstruction.hh */ = {isa = PBXBuildFile; fileRef = 213076EBA56B4249B7B91FC8 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorConstruction.hh */; };
+		965064C591694C8290487A7B /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysListEmStandard.cc */ = {isa = PBXBuildFile; fileRef = AD46C70D86414826807CE2D7 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysListEmStandard.cc */; };
+		96FCD5C8FEA541FFAEC18949 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D58E316D168D4DBC8140552D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeLists.txt */; };
+		A187945BCFF84B8DBCAAD32D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsListMessenger.cc */ = {isa = PBXBuildFile; fileRef = BC8E7762F7C14D2A906B107C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsListMessenger.cc */; };
+		A22C4354961C40BDAFB9AC9B /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMaxMessenger.cc */ = {isa = PBXBuildFile; fileRef = 08551687B63648428988932F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMaxMessenger.cc */; };
+		C1A5883B848F4607B3D47DCC /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/TrackingAction.hh */ = {isa = PBXBuildFile; fileRef = 231B62E1DD1742A492E5A54A /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/TrackingAction.hh */; };
+		C6779F29DDC64A64BE083D76 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/Run.hh */ = {isa = PBXBuildFile; fileRef = 01BF22B2F2AC4EB4B3052232 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/Run.hh */; };
+		C74A887FBDFC41BA81FBD902 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorMessenger.cc */ = {isa = PBXBuildFile; fileRef = C93E1CC0C7AC4DBF862D8E3F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorMessenger.cc */; };
+		D7312A43BE7B46B3AC9A5819 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorConstruction.cc */ = {isa = PBXBuildFile; fileRef = D4BA095649FD44B195FFF8A3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorConstruction.cc */; };
+		DB788B57A13A460985B7ACB0 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/RunAction.hh */ = {isa = PBXBuildFile; fileRef = 908A87171C0946A0B2487D6C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/RunAction.hh */; };
+		E39B4AA29D4B48B0AB39B853 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/ActionInitialization.hh */ = {isa = PBXBuildFile; fileRef = C973120F489E464390D2001F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/ActionInitialization.hh */; };
+		EBCA67ED74C1461D9E4B9E96 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/ActionInitialization.cc */ = {isa = PBXBuildFile; fileRef = 3830E022728E478BAAD0E1BA /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/ActionInitialization.cc */; };
+		EF656B4C65A04D138F22960B /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysListEmStandard.hh */ = {isa = PBXBuildFile; fileRef = B025C0679B3D4AE8ABEA81EC /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysListEmStandard.hh */; };
+		F051F608829C4FB59C47E5F9 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/SteppingAction.hh */ = {isa = PBXBuildFile; fileRef = C1171D4A5B234E37AC95C6F6 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/SteppingAction.hh */; };
+		F5B700FA253F40B28F689F2D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PrimaryGeneratorAction.hh */ = {isa = PBXBuildFile; fileRef = 9874053E534147A8A8B61BB5 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PrimaryGeneratorAction.hh */; };
+		FBE495812F664F73B0827F19 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/TestEm16.cc */ = {isa = PBXBuildFile; fileRef = 9C9D5231D59C497A87C59695 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/TestEm16.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		8633368DF81E4A6694529864 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		B7601A0636494F6F9A7BFAA7 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		E1867D89A4AE4964881A9EF9 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		EEFB35826DFC418BA4C14746 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		16F3075278134453B463F929 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68287FDB06654B8EB78DE68B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07C1A96F46F450DB1909CFA;
+			remoteInfo = ZERO_CHECK;
+		};
+		79F3E59C7E104E4E92AF32B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68287FDB06654B8EB78DE68B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 288FEC1EBC9E4504A44B0902;
+			remoteInfo = TestEm16;
+		};
+		80FB901169D7481A962595BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68287FDB06654B8EB78DE68B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9976F17068B64B4296667ECD;
+			remoteInfo = ALL_BUILD;
+		};
+		E7D9C1BDAA6E4C628077924C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68287FDB06654B8EB78DE68B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07C1A96F46F450DB1909CFA;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BF22B2F2AC4EB4B3052232 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/Run.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Run.hh; path = include/Run.hh; sourceTree = SOURCE_ROOT; };
+		05376672A9E1419EBD941CF2 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/HistoManager.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HistoManager.cc; path = src/HistoManager.cc; sourceTree = SOURCE_ROOT; };
+		074C036022A54AAAA3A6CDD4 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsList.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsList.cc; path = src/PhysicsList.cc; sourceTree = SOURCE_ROOT; };
+		08551687B63648428988932F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMaxMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StepMaxMessenger.cc; path = src/StepMaxMessenger.cc; sourceTree = SOURCE_ROOT; };
+		0FAF9BF1D17848DEABA8FD2C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/SteppingAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SteppingAction.cc; path = src/SteppingAction.cc; sourceTree = SOURCE_ROOT; };
+		1BABC9345A20404F92746100 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/RunAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RunAction.cc; path = src/RunAction.cc; sourceTree = SOURCE_ROOT; };
+		1F44A2467723425894D94262 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DetectorMessenger.hh; path = include/DetectorMessenger.hh; sourceTree = SOURCE_ROOT; };
+		213076EBA56B4249B7B91FC8 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorConstruction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DetectorConstruction.hh; path = include/DetectorConstruction.hh; sourceTree = SOURCE_ROOT; };
+		231B62E1DD1742A492E5A54A /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/TrackingAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = TrackingAction.hh; path = include/TrackingAction.hh; sourceTree = SOURCE_ROOT; };
+		26B10DEE7910440CBA2B238C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3830E022728E478BAAD0E1BA /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/ActionInitialization.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActionInitialization.cc; path = src/ActionInitialization.cc; sourceTree = SOURCE_ROOT; };
+		3984A5526E1E464594EE925C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/Run.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Run.cc; path = src/Run.cc; sourceTree = SOURCE_ROOT; };
+		3F63B99E4CF647349D92B7E1 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMax.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = StepMax.hh; path = include/StepMax.hh; sourceTree = SOURCE_ROOT; };
+		5450F8593CD647EE9BECD152 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/HistoManager.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = HistoManager.hh; path = include/HistoManager.hh; sourceTree = SOURCE_ROOT; };
+		590B73399F9340ECAC56D27D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/TrackingAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TrackingAction.cc; path = src/TrackingAction.cc; sourceTree = SOURCE_ROOT; };
+		6101CADD0BAE4AA8B583FAF8 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PrimaryGeneratorAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PrimaryGeneratorAction.cc; path = src/PrimaryGeneratorAction.cc; sourceTree = SOURCE_ROOT; };
+		6345F2822DEE4ECD89C8592C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsListMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PhysicsListMessenger.hh; path = include/PhysicsListMessenger.hh; sourceTree = SOURCE_ROOT; };
+		6BEE31BF6E0942099E658252 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsList.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PhysicsList.hh; path = include/PhysicsList.hh; sourceTree = SOURCE_ROOT; };
+		908A87171C0946A0B2487D6C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/RunAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RunAction.hh; path = include/RunAction.hh; sourceTree = SOURCE_ROOT; };
+		9874053E534147A8A8B61BB5 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PrimaryGeneratorAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PrimaryGeneratorAction.hh; path = include/PrimaryGeneratorAction.hh; sourceTree = SOURCE_ROOT; };
+		9C9D5231D59C497A87C59695 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/TestEm16.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestEm16.cc; path = TestEm16.cc; sourceTree = SOURCE_ROOT; };
+		A3E122A5EE6A45659BA2AAA5 /* TestEm16 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = TestEm16; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD46C70D86414826807CE2D7 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysListEmStandard.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysListEmStandard.cc; path = src/PhysListEmStandard.cc; sourceTree = SOURCE_ROOT; };
+		B025C0679B3D4AE8ABEA81EC /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysListEmStandard.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PhysListEmStandard.hh; path = include/PhysListEmStandard.hh; sourceTree = SOURCE_ROOT; };
+		BA3041C18C0D46BEB860ABD3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMaxMessenger.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = StepMaxMessenger.hh; path = include/StepMaxMessenger.hh; sourceTree = SOURCE_ROOT; };
+		BC8E7762F7C14D2A906B107C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsListMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsListMessenger.cc; path = src/PhysicsListMessenger.cc; sourceTree = SOURCE_ROOT; };
+		C1171D4A5B234E37AC95C6F6 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/SteppingAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SteppingAction.hh; path = include/SteppingAction.hh; sourceTree = SOURCE_ROOT; };
+		C93E1CC0C7AC4DBF862D8E3F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorMessenger.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetectorMessenger.cc; path = src/DetectorMessenger.cc; sourceTree = SOURCE_ROOT; };
+		C973120F489E464390D2001F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/ActionInitialization.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ActionInitialization.hh; path = include/ActionInitialization.hh; sourceTree = SOURCE_ROOT; };
+		D4BA095649FD44B195FFF8A3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorConstruction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetectorConstruction.cc; path = src/DetectorConstruction.cc; sourceTree = SOURCE_ROOT; };
+		D58E316D168D4DBC8140552D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E4E39088E79E44EF959CEC84 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMax.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StepMax.cc; path = src/StepMax.cc; sourceTree = SOURCE_ROOT; };
+		EB6B510DCAD74D6D9EECA97E /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/EventAction.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EventAction.cc; path = src/EventAction.cc; sourceTree = SOURCE_ROOT; };
+		F539963BFE0A4BD69F73859D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/EventAction.hh */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = EventAction.hh; path = include/EventAction.hh; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		878E09AEAB68442AAB41B406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F1B4B172923498AB97F2992 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3E122A5EE6A45659BA2AAA5 /* TestEm16 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C82305275FC4B03983C1088 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C9D5231D59C497A87C59695 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/TestEm16.cc */,
+				3830E022728E478BAAD0E1BA /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/ActionInitialization.cc */,
+				D4BA095649FD44B195FFF8A3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorConstruction.cc */,
+				C93E1CC0C7AC4DBF862D8E3F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorMessenger.cc */,
+				EB6B510DCAD74D6D9EECA97E /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/EventAction.cc */,
+				05376672A9E1419EBD941CF2 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/HistoManager.cc */,
+				AD46C70D86414826807CE2D7 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysListEmStandard.cc */,
+				074C036022A54AAAA3A6CDD4 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsList.cc */,
+				BC8E7762F7C14D2A906B107C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsListMessenger.cc */,
+				6101CADD0BAE4AA8B583FAF8 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PrimaryGeneratorAction.cc */,
+				3984A5526E1E464594EE925C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/Run.cc */,
+				1BABC9345A20404F92746100 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/RunAction.cc */,
+				E4E39088E79E44EF959CEC84 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMax.cc */,
+				08551687B63648428988932F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMaxMessenger.cc */,
+				0FAF9BF1D17848DEABA8FD2C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/SteppingAction.cc */,
+				590B73399F9340ECAC56D27D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/TrackingAction.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		44507BD017D64B16B990BB36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46542344499648AFAFC00393 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		ACFEE463230E454C9ACBDBFA /* TestEm16 */ = {
+			isa = PBXGroup;
+			children = (
+				3C82305275FC4B03983C1088 /* Source Files */,
+				EDF4C0B990C543A9B68B0F93 /* Header Files */,
+				D58E316D168D4DBC8140552D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeLists.txt */,
+			);
+			name = TestEm16;
+			sourceTree = "<group>";
+		};
+		ECE39D12A6074E3481A31521 = {
+			isa = PBXGroup;
+			children = (
+				ACFEE463230E454C9ACBDBFA /* TestEm16 */,
+				FD0B389E95644551B46BFC78 /* ALL_BUILD */,
+				0F1B4B172923498AB97F2992 /* Products */,
+				44507BD017D64B16B990BB36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF4C0B990C543A9B68B0F93 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C973120F489E464390D2001F /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/ActionInitialization.hh */,
+				213076EBA56B4249B7B91FC8 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorConstruction.hh */,
+				1F44A2467723425894D94262 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/DetectorMessenger.hh */,
+				F539963BFE0A4BD69F73859D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/EventAction.hh */,
+				5450F8593CD647EE9BECD152 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/HistoManager.hh */,
+				B025C0679B3D4AE8ABEA81EC /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysListEmStandard.hh */,
+				6BEE31BF6E0942099E658252 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsList.hh */,
+				6345F2822DEE4ECD89C8592C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PhysicsListMessenger.hh */,
+				9874053E534147A8A8B61BB5 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/PrimaryGeneratorAction.hh */,
+				01BF22B2F2AC4EB4B3052232 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/Run.hh */,
+				908A87171C0946A0B2487D6C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/RunAction.hh */,
+				3F63B99E4CF647349D92B7E1 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMax.hh */,
+				BA3041C18C0D46BEB860ABD3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/StepMaxMessenger.hh */,
+				C1171D4A5B234E37AC95C6F6 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/SteppingAction.hh */,
+				231B62E1DD1742A492E5A54A /* /Users/annamaria/lavoro/xray_shielding/TestEm16/include/TrackingAction.hh */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FD0B389E95644551B46BFC78 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				46542344499648AFAFC00393 /* CMake Rules */,
+				26B10DEE7910440CBA2B238C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		288FEC1EBC9E4504A44B0902 /* TestEm16 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8714E342AF20488284F41C50 /* Build configuration list for PBXNativeTarget "TestEm16" */;
+			buildPhases = (
+				8630F8588B8547B5B97F27F3 /* Sources */,
+				878E09AEAB68442AAB41B406 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD7C25ABF47B409593109093 /* PBXTargetDependency */,
+			);
+			name = TestEm16;
+			productName = TestEm16;
+			productReference = A3E122A5EE6A45659BA2AAA5 /* TestEm16 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68287FDB06654B8EB78DE68B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = C76F19D90C3347DDA45296B9 /* Build configuration list for PBXProject "TestEm16" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EEFB35826DFC418BA4C14746 /* Debug */,
+				8633368DF81E4A6694529864 /* Release */,
+				B7601A0636494F6F9A7BFAA7 /* MinSizeRel */,
+				E1867D89A4AE4964881A9EF9 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = ECE39D12A6074E3481A31521;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				9976F17068B64B4296667ECD /* ALL_BUILD */,
+				288FEC1EBC9E4504A44B0902 /* TestEm16 */,
+				A07C1A96F46F450DB1909CFA /* ZERO_CHECK */,
+				2983A7BA3EFA47C18A7D6DAD /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E43868890A2808DC9B74C01 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  make -f /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  make -f /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  make -f /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  make -f /Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6FB13AEB19BCC3163389C81B /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/annamaria/lavoro/xray_shielding/TestEm16/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/annamaria/lavoro/xray_shielding/TestEm16
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8630F8588B8547B5B97F27F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE495812F664F73B0827F19 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/TestEm16.cc */,
+				EBCA67ED74C1461D9E4B9E96 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/ActionInitialization.cc */,
+				D7312A43BE7B46B3AC9A5819 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorConstruction.cc */,
+				C74A887FBDFC41BA81FBD902 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/DetectorMessenger.cc */,
+				8BBADBE3A6D74217A1EE4CF2 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/EventAction.cc */,
+				721AECC15C1F4E439DDB5AA1 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/HistoManager.cc */,
+				965064C591694C8290487A7B /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysListEmStandard.cc */,
+				4FC35C23E88B41DD803C885C /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsList.cc */,
+				A187945BCFF84B8DBCAAD32D /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PhysicsListMessenger.cc */,
+				5CC2ADA45A29482A861E99B3 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/PrimaryGeneratorAction.cc */,
+				222CC31BB43141A9B550C415 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/Run.cc */,
+				5F7BA75E514F4D1C863D3CF0 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/RunAction.cc */,
+				07D6067EA7BD4954ACD0DA67 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMax.cc */,
+				A22C4354961C40BDAFB9AC9B /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/StepMaxMessenger.cc */,
+				75164A8ED122473299D3E621 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/SteppingAction.cc */,
+				022C046F42464756958A2348 /* /Users/annamaria/lavoro/xray_shielding/TestEm16/src/TrackingAction.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DAAF0D6D5A24695A400F84E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9976F17068B64B4296667ECD /* ALL_BUILD */;
+			targetProxy = 80FB901169D7481A962595BD /* PBXContainerItemProxy */;
+		};
+		96F4D205C49B4AE48A5A6CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07C1A96F46F450DB1909CFA /* ZERO_CHECK */;
+			targetProxy = E7D9C1BDAA6E4C628077924C /* PBXContainerItemProxy */;
+		};
+		CD7C25ABF47B409593109093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07C1A96F46F450DB1909CFA /* ZERO_CHECK */;
+			targetProxy = 16F3075278134453B463F929 /* PBXContainerItemProxy */;
+		};
+		FC68709AA3D84DE7899095EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 288FEC1EBC9E4504A44B0902 /* TestEm16 */;
+			targetProxy = 79F3E59C7E104E4E92AF32B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CCFDFEB725444AD86147D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		14FF1511C09942658D0C14CB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		184B4AAD3BF2408283D02EAF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		40BD78F1F7A94D02ADF329A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		425426332FBC41CDBA68F0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4335FF8C837B4F0DB238782F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16/build;
+			};
+			name = Debug;
+		};
+		4A29D97BCE974D9BB784DB5E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16/build;
+			};
+			name = MinSizeRel;
+		};
+		77B7D5B00DFF4D87A8DC90DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7E7775FBA8814DD1B706181D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/annamaria/lavoro/xray_shielding/TestEm16/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/lib /Users/annamaria/anaconda3/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17        -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Applications/geant4-v11.0.0-install/lib/libG4Tree.dylib","/Applications/geant4-v11.0.0-install/lib/libG4FR.dylib","/Applications/geant4-v11.0.0-install/lib/libG4GMocren.dylib","/Applications/geant4-v11.0.0-install/lib/libG4visHepRep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4RayTracer.dylib","/Applications/geant4-v11.0.0-install/lib/libG4VRML.dylib","/Applications/geant4-v11.0.0-install/lib/libG4OpenGL.dylib","/Applications/geant4-v11.0.0-install/lib/libG4gl2ps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4vis_management.dylib","/Applications/geant4-v11.0.0-install/lib/libG4modeling.dylib","/Applications/geant4-v11.0.0-install/lib/libG4interfaces.dylib","/Applications/geant4-v11.0.0-install/lib/libG4persistency.dylib","/Applications/geant4-v11.0.0-install/lib/libG4error_propagation.dylib","/Applications/geant4-v11.0.0-install/lib/libG4readout.dylib","/Applications/geant4-v11.0.0-install/lib/libG4physicslists.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tasking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4parmodels.dylib","-framework OpenGL",/Users/annamaria/anaconda3/lib/libQt5OpenGL.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5PrintSupport.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Widgets.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Gui.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Core.5.9.7.dylib,/opt/X11/lib/libXmu.dylib,/opt/local/lib/libXext.dylib,/opt/X11/lib/libXt.dylib,/opt/X11/lib/libICE.dylib,/opt/X11/lib/libSM.dylib,/opt/local/lib/libX11.dylib,/opt/X11/lib/libGL.dylib,"/Applications/geant4-v11.0.0-install/lib/libG4run.dylib","/Applications/geant4-v11.0.0-install/lib/libG4event.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tracking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4processes.dylib","/Applications/geant4-v11.0.0-install/lib/libG4analysis.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Applications/geant4-v11.0.0-install/lib/libG4digits_hits.dylib","/Applications/geant4-v11.0.0-install/lib/libG4track.dylib","/Applications/geant4-v11.0.0-install/lib/libG4particles.dylib","/Applications/geant4-v11.0.0-install/lib/libG4geometry.dylib","/Applications/geant4-v11.0.0-install/lib/libG4materials.dylib","/Applications/geant4-v11.0.0-install/lib/libG4zlib.dylib","/Applications/geant4-v11.0.0-install/lib/libG4graphics_reps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4intercoms.dylib","/Applications/geant4-v11.0.0-install/lib/libG4global.dylib","/Applications/geant4-v11.0.0-install/lib/libG4clhep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestEm16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/include/Geant4",/Users/annamaria/anaconda3/include/qt,/Users/annamaria/anaconda3/include/qt/QtGui,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/annamaria/anaconda3/include/qt/QtCore,"/Users/annamaria/anaconda3/./mkspecs/macx-clang",/Users/annamaria/anaconda3/include/qt/QtOpenGL,/Users/annamaria/anaconda3/include/qt/QtWidgets,/Users/annamaria/anaconda3/include/qt/QtPrintSupport,/opt/X11/include,/opt/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		845D5240EB2C46BA89858899 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8860A0BC7A65491F982D0EA3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9F64B1FF3894498AA9F1BE74 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/annamaria/lavoro/xray_shielding/TestEm16/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/lib /Users/annamaria/anaconda3/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17                -DNDEBUG -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Applications/geant4-v11.0.0-install/lib/libG4Tree.dylib","/Applications/geant4-v11.0.0-install/lib/libG4FR.dylib","/Applications/geant4-v11.0.0-install/lib/libG4GMocren.dylib","/Applications/geant4-v11.0.0-install/lib/libG4visHepRep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4RayTracer.dylib","/Applications/geant4-v11.0.0-install/lib/libG4VRML.dylib","/Applications/geant4-v11.0.0-install/lib/libG4OpenGL.dylib","/Applications/geant4-v11.0.0-install/lib/libG4gl2ps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4vis_management.dylib","/Applications/geant4-v11.0.0-install/lib/libG4modeling.dylib","/Applications/geant4-v11.0.0-install/lib/libG4interfaces.dylib","/Applications/geant4-v11.0.0-install/lib/libG4persistency.dylib","/Applications/geant4-v11.0.0-install/lib/libG4error_propagation.dylib","/Applications/geant4-v11.0.0-install/lib/libG4readout.dylib","/Applications/geant4-v11.0.0-install/lib/libG4physicslists.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tasking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4parmodels.dylib","-framework OpenGL",/Users/annamaria/anaconda3/lib/libQt5OpenGL.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5PrintSupport.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Widgets.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Gui.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Core.5.9.7.dylib,/opt/X11/lib/libXmu.dylib,/opt/local/lib/libXext.dylib,/opt/X11/lib/libXt.dylib,/opt/X11/lib/libICE.dylib,/opt/X11/lib/libSM.dylib,/opt/local/lib/libX11.dylib,/opt/X11/lib/libGL.dylib,"/Applications/geant4-v11.0.0-install/lib/libG4run.dylib","/Applications/geant4-v11.0.0-install/lib/libG4event.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tracking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4processes.dylib","/Applications/geant4-v11.0.0-install/lib/libG4analysis.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Applications/geant4-v11.0.0-install/lib/libG4digits_hits.dylib","/Applications/geant4-v11.0.0-install/lib/libG4track.dylib","/Applications/geant4-v11.0.0-install/lib/libG4particles.dylib","/Applications/geant4-v11.0.0-install/lib/libG4geometry.dylib","/Applications/geant4-v11.0.0-install/lib/libG4materials.dylib","/Applications/geant4-v11.0.0-install/lib/libG4zlib.dylib","/Applications/geant4-v11.0.0-install/lib/libG4graphics_reps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4intercoms.dylib","/Applications/geant4-v11.0.0-install/lib/libG4global.dylib","/Applications/geant4-v11.0.0-install/lib/libG4clhep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestEm16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/include/Geant4",/Users/annamaria/anaconda3/include/qt,/Users/annamaria/anaconda3/include/qt/QtGui,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/annamaria/anaconda3/include/qt/QtCore,"/Users/annamaria/anaconda3/./mkspecs/macx-clang",/Users/annamaria/anaconda3/include/qt/QtOpenGL,/Users/annamaria/anaconda3/include/qt/QtWidgets,/Users/annamaria/anaconda3/include/qt/QtPrintSupport,/opt/X11/include,/opt/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A4E7F66775B9427585FA718E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/annamaria/lavoro/xray_shielding/TestEm16/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/lib /Users/annamaria/anaconda3/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17      -DNDEBUG     -DNDEBUG -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Applications/geant4-v11.0.0-install/lib/libG4Tree.dylib","/Applications/geant4-v11.0.0-install/lib/libG4FR.dylib","/Applications/geant4-v11.0.0-install/lib/libG4GMocren.dylib","/Applications/geant4-v11.0.0-install/lib/libG4visHepRep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4RayTracer.dylib","/Applications/geant4-v11.0.0-install/lib/libG4VRML.dylib","/Applications/geant4-v11.0.0-install/lib/libG4OpenGL.dylib","/Applications/geant4-v11.0.0-install/lib/libG4gl2ps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4vis_management.dylib","/Applications/geant4-v11.0.0-install/lib/libG4modeling.dylib","/Applications/geant4-v11.0.0-install/lib/libG4interfaces.dylib","/Applications/geant4-v11.0.0-install/lib/libG4persistency.dylib","/Applications/geant4-v11.0.0-install/lib/libG4error_propagation.dylib","/Applications/geant4-v11.0.0-install/lib/libG4readout.dylib","/Applications/geant4-v11.0.0-install/lib/libG4physicslists.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tasking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4parmodels.dylib","-framework OpenGL",/Users/annamaria/anaconda3/lib/libQt5OpenGL.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5PrintSupport.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Widgets.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Gui.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Core.5.9.7.dylib,/opt/X11/lib/libXmu.dylib,/opt/local/lib/libXext.dylib,/opt/X11/lib/libXt.dylib,/opt/X11/lib/libICE.dylib,/opt/X11/lib/libSM.dylib,/opt/local/lib/libX11.dylib,/opt/X11/lib/libGL.dylib,"/Applications/geant4-v11.0.0-install/lib/libG4run.dylib","/Applications/geant4-v11.0.0-install/lib/libG4event.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tracking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4processes.dylib","/Applications/geant4-v11.0.0-install/lib/libG4analysis.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Applications/geant4-v11.0.0-install/lib/libG4digits_hits.dylib","/Applications/geant4-v11.0.0-install/lib/libG4track.dylib","/Applications/geant4-v11.0.0-install/lib/libG4particles.dylib","/Applications/geant4-v11.0.0-install/lib/libG4geometry.dylib","/Applications/geant4-v11.0.0-install/lib/libG4materials.dylib","/Applications/geant4-v11.0.0-install/lib/libG4zlib.dylib","/Applications/geant4-v11.0.0-install/lib/libG4graphics_reps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4intercoms.dylib","/Applications/geant4-v11.0.0-install/lib/libG4global.dylib","/Applications/geant4-v11.0.0-install/lib/libG4clhep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestEm16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/include/Geant4",/Users/annamaria/anaconda3/include/qt,/Users/annamaria/anaconda3/include/qt/QtGui,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/annamaria/anaconda3/include/qt/QtCore,"/Users/annamaria/anaconda3/./mkspecs/macx-clang",/Users/annamaria/anaconda3/include/qt/QtOpenGL,/Users/annamaria/anaconda3/include/qt/QtWidgets,/Users/annamaria/anaconda3/include/qt/QtPrintSupport,/opt/X11/include,/opt/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A9C8FE7119E5482E8EF3F1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AD0676A2D30B43B8AB788668 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AFE4E79A9F8742909083D3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",G4UI_USE_TCSH,G4UI_USE_QT,G4VIS_USE_OPENGLQT,G4VIS_USE_OPENGLX,G4VIS_USE_OPENGL,G4LIB_BUILD_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_PRINTSUPPORT_LIB,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/annamaria/lavoro/xray_shielding/TestEm16/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/lib /Users/annamaria/anaconda3/lib","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -Qunused-arguments -DGL_SILENCE_DEPRECATION -pthread -ftls-model=initial-exec -std=c++17      -DNDEBUG -fno-trapping-math -ftree-vectorize -fno-math-errno     -DNDEBUG -fPIC '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Applications/geant4-v11.0.0-install/lib/libG4Tree.dylib","/Applications/geant4-v11.0.0-install/lib/libG4FR.dylib","/Applications/geant4-v11.0.0-install/lib/libG4GMocren.dylib","/Applications/geant4-v11.0.0-install/lib/libG4visHepRep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4RayTracer.dylib","/Applications/geant4-v11.0.0-install/lib/libG4VRML.dylib","/Applications/geant4-v11.0.0-install/lib/libG4OpenGL.dylib","/Applications/geant4-v11.0.0-install/lib/libG4gl2ps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4vis_management.dylib","/Applications/geant4-v11.0.0-install/lib/libG4modeling.dylib","/Applications/geant4-v11.0.0-install/lib/libG4interfaces.dylib","/Applications/geant4-v11.0.0-install/lib/libG4persistency.dylib","/Applications/geant4-v11.0.0-install/lib/libG4error_propagation.dylib","/Applications/geant4-v11.0.0-install/lib/libG4readout.dylib","/Applications/geant4-v11.0.0-install/lib/libG4physicslists.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tasking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4parmodels.dylib","-framework OpenGL",/Users/annamaria/anaconda3/lib/libQt5OpenGL.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5PrintSupport.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Widgets.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Gui.5.9.7.dylib,/Users/annamaria/anaconda3/lib/libQt5Core.5.9.7.dylib,/opt/X11/lib/libXmu.dylib,/opt/local/lib/libXext.dylib,/opt/X11/lib/libXt.dylib,/opt/X11/lib/libICE.dylib,/opt/X11/lib/libSM.dylib,/opt/local/lib/libX11.dylib,/opt/X11/lib/libGL.dylib,"/Applications/geant4-v11.0.0-install/lib/libG4run.dylib","/Applications/geant4-v11.0.0-install/lib/libG4event.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tracking.dylib","/Applications/geant4-v11.0.0-install/lib/libG4processes.dylib","/Applications/geant4-v11.0.0-install/lib/libG4analysis.dylib","/Applications/geant4-v11.0.0-install/lib/libG4tools.dylib",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libexpat.tbd,"/Applications/geant4-v11.0.0-install/lib/libG4digits_hits.dylib","/Applications/geant4-v11.0.0-install/lib/libG4track.dylib","/Applications/geant4-v11.0.0-install/lib/libG4particles.dylib","/Applications/geant4-v11.0.0-install/lib/libG4geometry.dylib","/Applications/geant4-v11.0.0-install/lib/libG4materials.dylib","/Applications/geant4-v11.0.0-install/lib/libG4zlib.dylib","/Applications/geant4-v11.0.0-install/lib/libG4graphics_reps.dylib","/Applications/geant4-v11.0.0-install/lib/libG4intercoms.dylib","/Applications/geant4-v11.0.0-install/lib/libG4global.dylib","/Applications/geant4-v11.0.0-install/lib/libG4clhep.dylib","/Applications/geant4-v11.0.0-install/lib/libG4ptl.0.0.2.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TestEm16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Applications/geant4-v11.0.0-install/include/Geant4",/Users/annamaria/anaconda3/include/qt,/Users/annamaria/anaconda3/include/qt/QtGui,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/annamaria/anaconda3/include/qt/QtCore,"/Users/annamaria/anaconda3/./mkspecs/macx-clang",/Users/annamaria/anaconda3/include/qt/QtOpenGL,/Users/annamaria/anaconda3/include/qt/QtWidgets,/Users/annamaria/anaconda3/include/qt/QtPrintSupport,/opt/X11/include,/opt/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D7C11B5018B647D697A5BE56 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16/build;
+			};
+			name = RelWithDebInfo;
+		};
+		E978A00A8DF84C7992D8D62F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F7697936E8CE416C8DCADBDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FA0B4445207E4EDD80C2827D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/annamaria/lavoro/xray_shielding/TestEm16/build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA231863D1549EC8C745E02 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BD78F1F7A94D02ADF329A8 /* Debug */,
+				0CCFDFEB725444AD86147D57 /* Release */,
+				184B4AAD3BF2408283D02EAF /* MinSizeRel */,
+				14FF1511C09942658D0C14CB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		52CC1FEFA0BE4B13935A8F50 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C8FE7119E5482E8EF3F1CA /* Debug */,
+				425426332FBC41CDBA68F0A0 /* Release */,
+				845D5240EB2C46BA89858899 /* MinSizeRel */,
+				E978A00A8DF84C7992D8D62F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		768505722C8A43A79C49149B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B7D5B00DFF4D87A8DC90DB /* Debug */,
+				F7697936E8CE416C8DCADBDB /* Release */,
+				8860A0BC7A65491F982D0EA3 /* MinSizeRel */,
+				AD0676A2D30B43B8AB788668 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8714E342AF20488284F41C50 /* Build configuration list for PBXNativeTarget "TestEm16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E7775FBA8814DD1B706181D /* Debug */,
+				AFE4E79A9F8742909083D3DC /* Release */,
+				A4E7F66775B9427585FA718E /* MinSizeRel */,
+				9F64B1FF3894498AA9F1BE74 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C76F19D90C3347DDA45296B9 /* Build configuration list for PBXProject "TestEm16" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4335FF8C837B4F0DB238782F /* Debug */,
+				FA0B4445207E4EDD80C2827D /* Release */,
+				4A29D97BCE974D9BB784DB5E /* MinSizeRel */,
+				D7C11B5018B647D697A5BE56 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68287FDB06654B8EB78DE68B /* Project object */;
+}
