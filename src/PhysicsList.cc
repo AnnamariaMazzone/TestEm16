@@ -90,7 +90,7 @@ PhysicsList::PhysicsList() : G4VModularPhysicsList(),
   // Decay physics  
   fDecayPhysics = new G4DecayPhysics(1);
   
-  SetDefaultCutValue(0.01*mm);  
+  SetDefaultCutValue(1*mm);  
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

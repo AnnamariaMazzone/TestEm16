@@ -107,13 +107,13 @@ void PhysListEmStandard::ConstructProcess()
      
     if (particleName == "gamma") {
 
-      ph->RegisterProcess(new G4RayleighScattering, particle);
+      ph->RegisterProcess(new G4RayleighScattering, particle);      
       ph->RegisterProcess(new G4PhotoElectricEffect, particle);
-//      G4ComptonScattering* cs   = new G4ComptonScattering;
-//      cs->SetEmModel(new G4KleinNishinaModel());
-//      ph->RegisterProcess(cs, particle);
+      G4ComptonScattering* cs   = new G4ComptonScattering;
+      cs->SetEmModel(new G4KleinNishinaModel());
+      ph->RegisterProcess(cs, particle);
       ph->RegisterProcess(new G4GammaConversion, particle);
-        ph->RegisterProcess(new G4ComptonScattering, particle);
+     
     } else if (particleName == "e-") {
     
       ph->RegisterProcess(new G4eMultipleScattering(), particle);            

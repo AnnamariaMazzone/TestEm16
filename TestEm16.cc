@@ -63,7 +63,7 @@ int main(int argc,char** argv) {
      G4int nThreads = G4UIcommand::ConvertToInt(argv[2]);
      runManager->SetNumberOfThreads(nThreads);
   }
-    runManager->SetNumberOfThreads(1);
+
   //set mandatory initialization classes
   DetectorConstruction* det;
   runManager->SetUserInitialization(det = new DetectorConstruction);
@@ -82,7 +82,7 @@ int main(int argc,char** argv) {
     //interactive mode
     visManager = new G4VisExecutive;
     visManager->Initialize();
-      UImanager->ApplyCommand("/control/execute vis.mac");
+      UImanager->ApplyCommand("/control/execute run01.mac");
     // define icons before SessionStart
 //    if (ui->IsGUI()) { UImanager->ApplyCommand("/control/execute gui.mac"); }
     ui->SessionStart();

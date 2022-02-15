@@ -58,9 +58,9 @@ DetectorConstruction::DetectorConstruction()
 {
     
     fTargetLength  = 20.*mm;
-    fTargetDepth   = 1.0*cm;
+    fTargetDepth   = 2.0*mm;
     DefineMaterials();
-    SetTargetMaterial("G4_Si");
+    SetTargetMaterial("PS50_C50");
     // create commands for interactive definition of the detector
     fDetectorMessenger = new DetectorMessenger(this);
 }
@@ -89,7 +89,7 @@ void DetectorConstruction::DefineMaterials()
     new G4Material("Iron",      z=26., a= 55.85*g/mole,    density= 7.870*g/cm3);
     new G4Material("Copper",    z=29., a= 63.546*g/mole,    density= 8.920*g/cm3);
     // define a vacuum with a restgas pressure  typical for accelerators
-    G4Material* Vacuum = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Galactic" );
+    G4NistManager::Instance()->FindOrBuildMaterial( "G4_Galactic" );
     // G4Material* Be = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Be" );
     //
     //    G4Material* Cu = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Cu");
@@ -181,9 +181,9 @@ void DetectorConstruction::DefineMaterials()
     Sci->AddElement(C, natoms=21);
     Sci->AddElement(H, natoms=19);
     G4Material* Si = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Si");
-    fWorldMater   = Vacuum;
-    fTargetMater=Si;
-    fTrackerMater =Vacuum;
+    fWorldMater   = Air;
+    fTargetMater=PS50_C50;
+    fTrackerMater =Si;
     G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 }
 
@@ -318,7 +318,6 @@ G4VPhysicalVolume* DetectorConstruction::ConstructVolumes()
       vTracker = new G4VisAttributes();
     //   visTracker->SetColor(G4Color(0.3,0.3,1.0));   // blueish
       vTracker->SetColor(G4Color(1.0,1.0,1.0));   // black
-    vTracker->SetVisibility(false);
       flTracker->SetVisAttributes(vTracker);      
       return fpWorld;
 }
