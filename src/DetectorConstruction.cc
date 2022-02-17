@@ -95,6 +95,7 @@ void DetectorConstruction::DefineMaterials()
     //    G4Material* Cu = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Cu");
     
     G4Material* Pb = G4NistManager::Instance()->FindOrBuildMaterial("G4_Pb");
+ 
     //carbonato di bario - BaCO3
     G4Element* Ba = G4NistManager::Instance()->FindOrBuildElement("Ba");
     G4Element* C = G4NistManager::Instance()->FindOrBuildElement("C");
@@ -133,8 +134,8 @@ void DetectorConstruction::DefineMaterials()
     
     density = 2.345 *g/cm3;
     G4Material* PS25_S75 = new G4Material(name="PS25_S75", density, ncomponents=2);
-    PS25_S75->AddMaterial(BaSO4, fractionmass=25.*perCent);
-    PS25_S75->AddMaterial(PS , fractionmass=75.*perCent);
+    PS25_S75->AddMaterial(BaSO4, fractionmass=75.*perCent);
+    PS25_S75->AddMaterial(PS , fractionmass=25.*perCent);
     
     //Ossido di Bismuto - Bi2O3
     G4Element* Bi = G4NistManager::Instance()->FindOrBuildElement("Bi");
@@ -150,16 +151,28 @@ void DetectorConstruction::DefineMaterials()
     
     density = 2.99 *g/cm3;
     G4Material* PS25_Bi75 = new G4Material(name="PS25_Bi75", density, ncomponents=2);
-    PS25_Bi75->AddMaterial(Bi2O3, fractionmass=25.*perCent);
-    PS25_Bi75->AddMaterial(PS , fractionmass=75.*perCent);
+    PS25_Bi75->AddMaterial(Bi2O3, fractionmass=75.*perCent);
+    PS25_Bi75->AddMaterial(PS, fractionmass=25.*perCent);
     
-//    Campioni ternari
     //triossido di tungsteno - WO3
     G4Element* W = G4NistManager::Instance()->FindOrBuildElement("W");
     density = 7.16 *g/cm3;
     G4Material* WO3 = new G4Material(name="WO3", density, ncomponents=2);
     WO3->AddElement(W, natoms=1);
     WO3->AddElement(O, natoms=3);
+    
+    density = 1.822 *g/cm3;
+    G4Material* PS50_W50 = new G4Material(name="PS50_W50", density, ncomponents=2);
+    PS50_W50->AddMaterial(WO3, fractionmass=50.*perCent);
+    PS50_W50->AddMaterial(PS , fractionmass=50.*perCent);
+    
+    density = 2.931 *g/cm3;
+    G4Material* PS25_W75 = new G4Material(name="PS25_W75", density, ncomponents=2);
+    PS25_W75->AddMaterial(PS, fractionmass=25.*perCent);
+    PS25_W75->AddMaterial(WO3 , fractionmass=75.*perCent);
+    
+//    Campioni ternari
+    
     
     density = 1.742 *g/cm3;
     G4Material* PS50_C25_W25 = new G4Material(name="PS50_C25_W25", density, ncomponents=3);
@@ -172,6 +185,14 @@ void DetectorConstruction::DefineMaterials()
     G4Material* CNT = new G4Material(name="CNT", density, ncomponents=1);
     CNT->AddElement(C, natoms=1);
     
+    G4Material* Si = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Si");
+    G4Element* elSi = G4NistManager::Instance()->FindOrBuildElement("Si");
+    density = 1.34 *g/cm3;
+    G4Material* SiOC2H6 = new G4Material(name="SiOC2H6", density, ncomponents=4);
+    SiOC2H6->AddElement(elSi, natoms=1);
+    SiOC2H6->AddElement(O, natoms=1);
+    SiOC2H6->AddElement(C , natoms=2);
+    SiOC2H6->AddElement(H , natoms=6);
     
     //    //--------- material names of the principal geometrical components --------
     //
@@ -180,10 +201,10 @@ void DetectorConstruction::DefineMaterials()
     new G4Material("EJ-200", density= 1.023*g/cm3, ncomponents=2);
     Sci->AddElement(C, natoms=21);
     Sci->AddElement(H, natoms=19);
-    G4Material* Si = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Si");
+    
     fWorldMater   = Air;
-    fTargetMater=PS50_C50;
-    fTrackerMater =Si;
+//    fTargetMater=PS50_C50;
+    fTrackerMater =Air;
     G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 }
 
