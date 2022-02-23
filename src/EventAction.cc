@@ -34,8 +34,8 @@
 #include "EventAction.hh"
 
 #include "Run.hh"
-#include "HistoManager.hh"
-
+//#include "HistoManager.hh"
+#include "G4AnalysisManager.hh"
 #include "G4Event.hh"
 #include "G4RunManager.hh"
 #include "G4UnitsTable.hh"
@@ -84,7 +84,7 @@ void EventAction::EndOfEventAction(const G4Event*)
   run->AddEdep (fTotalEnergyDeposit);
   run->AddEflow(fTotalEnergyFlow);
                
-  G4AnalysisManager::Instance()->FillH1(1,fTotalEnergyDeposit);
+//  G4AnalysisManager::Instance()->FillH1(1,fTotalEnergyDeposit);
 //  G4AnalysisManager::Instance()->FillH1(2,fTotalEnergyFlow);
 }
 

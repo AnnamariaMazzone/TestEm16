@@ -33,12 +33,11 @@
 #include "Run.hh"
 #include "DetectorConstruction.hh"
 #include "PrimaryGeneratorAction.hh"
-#include "HistoManager.hh"
-
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+int fGammaEmessi;
 
 Run::Run(DetectorConstruction* det)
 : G4Run(),
@@ -316,6 +315,7 @@ void Run::EndOfRun()
     G4String name = itn->first;
     ParticleData data = itn->second;
     G4int count = data.fCount;
+     fGammaEmessi=count;
     G4double eMean = data.fEmean/count;
     G4double eMin = data.fEmin;
     G4double eMax = data.fEmax;

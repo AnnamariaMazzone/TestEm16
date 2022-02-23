@@ -34,8 +34,6 @@
 
 #include "Run.hh"
 #include "EventAction.hh"
-#include "HistoManager.hh"
-
 #include "G4RunManager.hh"
 #include "G4Track.hh"
 #include "G4StepStatus.hh"
@@ -87,7 +85,7 @@ void TrackingAction::PostUserTrackingAction(const G4Track* track)
  
  // histograms: enery flow
  //
- G4AnalysisManager* analysis = G4AnalysisManager::Instance();
+// G4AnalysisManager* analysis = G4AnalysisManager::Instance();
  
 // G4int ih = 0; 
 // G4String type   = particle->GetParticleType();      

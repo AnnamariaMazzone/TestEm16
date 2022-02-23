@@ -41,7 +41,7 @@
 class DetectorConstruction;
 class Run;
 class PrimaryGeneratorAction;
-class HistoManager;
+//class HistoManager;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -60,7 +60,7 @@ class RunAction : public G4UserRunAction
     DetectorConstruction*      fDetector;
     PrimaryGeneratorAction*    fPrimary;
     Run*                       fRun;
-    HistoManager*              fHistoManager;
+//    HistoManager*              fHistoManager;
         
 };
 

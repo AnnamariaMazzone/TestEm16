@@ -40,9 +40,10 @@
 #include "G4VProcess.hh"
 #include "G4ParticleTypes.hh"
 #include "G4UnitsTable.hh"
-#include "HistoManager.hh"
+//#include "HistoManager.hh"
 #include "G4EmProcessSubType.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4AnalysisManager.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -77,8 +78,8 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep)
         
         fEventAction->AddEflow(energy);
         run->ParticleFlux(name,energy);
-        G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-        analysisManager->FillH1(2,energy);
+//        G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+///        analysisManager->FillH1(1,energy);
         
         if (EdepStep > 0.) {
             fEventAction->AddEdep(EdepStep);

@@ -185,6 +185,20 @@ void DetectorConstruction::DefineMaterials()
     G4Material* CNT = new G4Material(name="CNT", density, ncomponents=1);
     CNT->AddElement(C, natoms=1);
     
+    //"PS50_C45_CNT5"
+    density = 1.638 *g/cm3;
+    G4Material* PS50_C45_CNT5 = new G4Material(name="PS50_C45_CNT5", density, ncomponents=3);
+    PS50_C45_CNT5->AddMaterial(CNT, fractionmass=5.*perCent);
+    PS50_C45_CNT5->AddMaterial(BaCO3, fractionmass=45.*perCent);
+    PS50_C45_CNT5->AddMaterial(PS , fractionmass=50.*perCent);
+    
+    //"PS50_W45_CNT5"
+    density = 1.755 *g/cm3;
+    G4Material* PS50_W45_CNT5 = new G4Material(name="PS50_W45_CNT5", density, ncomponents=3);
+    PS50_W45_CNT5->AddMaterial(CNT, fractionmass=5.*perCent);
+    PS50_W45_CNT5->AddMaterial(WO3, fractionmass=45.*perCent);
+    PS50_W45_CNT5->AddMaterial(PS , fractionmass=50.*perCent);
+    
     G4Material* Si = G4NistManager::Instance()->FindOrBuildMaterial( "G4_Si");
     G4Element* elSi = G4NistManager::Instance()->FindOrBuildElement("Si");
     density = 1.34 *g/cm3;
